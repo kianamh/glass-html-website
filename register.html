@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="main-header">
+      <figure class="logo">
+        <a href="index.html"
+          ><img src="./images/glass-logo.png" alt="logo"
+        /></a>
+      </figure>
+      <nav class="main-nav">
+        <ul>
+          <li>
+            <a href="login.html">Login</a>
+          </li>
+          <li>
+            <a href="register.html">Register</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <h1>Register Form</h1>
+
+    <form action="reg.php" method="post" autocomplete="off">
+      <table width="600">
+        <tr>
+          <td>
+            <label for="first-name" class="label"> First Name: </label>
+            <input type="text" name="First name" id="first-name" required />
+          </td>
+          <td>
+            <label for="last-name" class="label"> Last Name: </label>
+            <input type="text" name="Last Name" id="last-name" required />
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label for="address" class="label"> Address: </label>
+            <input type="text" name="address" id="address" required />
+          </td>
+
+          <td>
+            <label for="tall" class="label"> Tell:</label>
+            <input
+              type="phone"
+              name="tell"
+              id="tell"
+              required
+              placeholder="+989334244341"
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label for="city" class="label"> City:</label>
+            <select name="city" id="city">
+              <option value="chooyse"></option>
+              <optgroup label="Tehran">
+                <option value="fasham">fasham</option>
+                <option value="shahriyar">shahriyar</option>
+                <option value="varamin">varamin</option>
+              </optgroup>
+
+              <optgroup label="Esfahan">
+                <option value="najafabad">najafabad</option>
+                <option value="natanz">natanz</option>
+                <option value="kashan">kashan</option>
+              </optgroup>
+            </select>
+          </td>
+
+          <td>
+            <label for="color" class="label">Your favorite color:</label>
+            <input type="color" name="color" id="color" value="#f1f1f" />
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label for="email" class="label">Email:</label>
+            <input type="email" name="email" id="email" required />
+          </td>
+          <td>
+            <label for="pass" class="label">Password:</label>
+            <input
+              type="password"
+              name="password"
+              id="pass"
+              required
+              maxlength="100"
+              minlength="6"
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <p class="label">Gender:</p>
+            <label for="woman">Woman:</label>
+            <input type="radio" name="gender" id="woman" required />
+            <label for="man">Man:</label>
+            <input type="radio" name="gender" id="man" required />
+          </td>
+
+          <td>
+            <label for="date" class="label">Birthday:</label>
+            <input type="date" name="date" id="date" required />
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="2">
+            <label for="bio" class="label">Bio:</label>
+            <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="2">
+            <input type="checkbox" name="agreement" id="agreement" required />
+            <label for="agreement">I agree the terms and condition:</label>
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="2">
+            <button>Register</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+
+    <footer>
+      <figure class="footer-logo">
+        <img src="./images/glass-logo.png" alt="logo" />
+      </figure>
+
+      <p>Copyright © 2022 Glass. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
